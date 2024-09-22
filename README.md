@@ -2,4 +2,4 @@
 
 ## Easy payment app
 
-Cette maquette vient de (https://dribbble.com/shots/24860391-Easy-payment-app)[dribble.com].
+Cette maquette vient de [dribble.com](https://dribbble.com/shots/24860391-Easy-payment-app).
