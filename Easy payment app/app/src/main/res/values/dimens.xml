@@ -3,4 +3,5 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="box_size">50dp</dimen>
+    <dimen name="little_box_size">40dp</dimen>
 </resources>

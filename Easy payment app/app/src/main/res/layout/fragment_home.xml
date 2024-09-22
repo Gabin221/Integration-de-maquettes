@@ -125,19 +125,21 @@
             android:padding="10dp"
             android:orientation="vertical">
 
-            <Button
-                android:layout_width="@dimen/box_size"
-                android:layout_height="@dimen/box_size"
+            <TextView
+                android:id="@+id/allButton"
+                android:layout_width="@dimen/little_box_size"
+                android:layout_height="@dimen/little_box_size"
                 app:layout_constraintDimensionRatio="H,1:1"
-                android:text="+"
                 android:textSize="20sp"
+                android:gravity="center"
                 android:background="@drawable/square_green_button"/>
 
             <TextView
+                android:id="@+id/test"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:layout_marginTop="10dp"
+                android:layout_marginVertical="15dp"
                 android:text="All analytics"/>
 
         </LinearLayout>
@@ -151,22 +153,189 @@
             android:padding="10dp"
             android:orientation="vertical">
 
-            <Button
-                android:layout_width="@dimen/box_size"
-                android:layout_height="@dimen/box_size"
+            <TextView
+                android:id="@+id/activityButton"
+                android:layout_width="@dimen/little_box_size"
+                android:layout_height="@dimen/little_box_size"
                 app:layout_constraintDimensionRatio="H,1:1"
-                android:text="+"
                 android:textSize="20sp"
-                android:background="@drawable/square_white_button"/>
+                android:gravity="center"
+                android:background="@drawable/square_white_button"
+                android:backgroundTint="@color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:layout_marginTop="10dp"
+                android:layout_marginVertical="15dp"
                 android:text="Activity analytics"/>
 
         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:background="@drawable/gray_background"
+            android:layout_marginRight="3dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/desktopButton"
+                android:layout_width="@dimen/little_box_size"
+                android:layout_height="@dimen/little_box_size"
+                app:layout_constraintDimensionRatio="H,1:1"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/square_white_button"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginVertical="15dp"
+                android:text="Desktop"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:background="@drawable/gray_background"
+            android:layout_marginHorizontal="3dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mobileButton"
+                android:layout_width="@dimen/little_box_size"
+                android:layout_height="@dimen/little_box_size"
+                app:layout_constraintDimensionRatio="H,1:1"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/square_white_button"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginVertical="15dp"
+                android:text="Mobile"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:background="@drawable/gray_background"
+            android:layout_marginLeft="3dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tabletButton"
+                android:layout_width="@dimen/little_box_size"
+                android:layout_height="@dimen/little_box_size"
+                app:layout_constraintDimensionRatio="H,1:1"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/square_white_button"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginVertical="15dp"
+                android:text="Tablet"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/paypalLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="5dp"
+                    android:text="PayPal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/starButton"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/lightShareButton"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:text="https://paypal.me/ https://www.paypal.com.cz.home"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:text="23 views"/>
 
     </LinearLayout>
 
