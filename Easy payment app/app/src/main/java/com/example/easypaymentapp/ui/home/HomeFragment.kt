@@ -59,12 +59,12 @@ class HomeFragment : Fragment() {
 
         ajoutImage()
 
-        // Crée un dégradé de couleurs
+        // Crée un dégradé de couleurs en utilisant les couleurs nommées
         val gradientDrawable = GradientDrawable(
-            GradientDrawable.Orientation.TOP_BOTTOM, // Choisir l'orientation du dégradé
+            GradientDrawable.Orientation.TOP_BOTTOM, // Orientation du haut vers le bas
             intArrayOf(
-                Color.parseColor("#85fc6c"),
-                Color.parseColor("#f3f54c")
+                ContextCompat.getColor(requireContext(), R.color.startDegradeGreen), // Utilise les couleurs nommées
+                ContextCompat.getColor(requireContext(), R.color.endDegradeYellow)
             )
         )
 
