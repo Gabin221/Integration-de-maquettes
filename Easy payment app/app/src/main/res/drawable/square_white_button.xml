@@ -4,6 +4,12 @@
 
     <corners
         android:radius="10dp" />
+
     <stroke
         android:color="@color/white" />
+
+    <padding
+        android:left="5dp"
+        android:top="0dp"
+        android:bottom="4dp"/>
 </shape>
