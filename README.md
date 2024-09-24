@@ -6,7 +6,6 @@ Cette maquette vient de <a href="https://dribbble.com/shots/24860391-Easy-paymen
 
 <div align="center">
     <img src="screenshot/easy_payment_app.png">
-    <img src="screenshot/easy_payment_app_rendu.png">
 </div>
 
 ## Crypto wallet app
