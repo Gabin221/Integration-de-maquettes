@@ -4,23 +4,26 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.LinearGradient
 import android.graphics.Shader
+import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.WindowManager
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.content.ContextCompat
 
 @Suppress("DEPRECATION")
 class SplashScreen : AppCompatActivity() {
 
     lateinit var titleH1: TextView
-    lateinit var titleH2: TextView
-    lateinit var titleH3: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
+
+        titleH1 = findViewById(R.id.titleH1)
 
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -30,15 +33,14 @@ class SplashScreen : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
-        }, 3000)
+        }, 2000)
 
         val paint = titleH1.paint
         val width = paint.measureText(titleH1.text.toString())
         val textShader: Shader = LinearGradient(0f, 0f, width, titleH1.textSize, intArrayOf(
-            Color.parseColor(getColor(R.color.startDegradeGreen).toString()),
-            Color.parseColor(getColor(R.color.endDegradeYellow).toString())
-        ), null, Shader.TileMode.REPEAT)
-
-        titleH1.paint.setShader(textShader)
+            ContextCompat.getColor(this, R.color.startDegradeGreen),
+            ContextCompat.getColor(this, R.color.endDegradeYellow)
+        ), null, Shader.TileMode.CLAMP)
+        paint.shader = textShader
     }
 }

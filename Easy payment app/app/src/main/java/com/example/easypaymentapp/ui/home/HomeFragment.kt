@@ -59,16 +59,14 @@ class HomeFragment : Fragment() {
 
         ajoutImage()
 
-        // Crée un dégradé de couleurs en utilisant les couleurs nommées
         val gradientDrawable = GradientDrawable(
-            GradientDrawable.Orientation.TOP_BOTTOM, // Orientation du haut vers le bas
+            GradientDrawable.Orientation.TOP_BOTTOM,
             intArrayOf(
-                ContextCompat.getColor(requireContext(), R.color.startDegradeGreen), // Utilise les couleurs nommées
+                ContextCompat.getColor(requireContext(), R.color.startDegradeGreen),
                 ContextCompat.getColor(requireContext(), R.color.endDegradeYellow)
             )
         )
 
-// Applique le dégradé à l'arrière-plan du TextView
         gradientDrawable.cornerRadius = 20f
         allButton.background = gradientDrawable
 
