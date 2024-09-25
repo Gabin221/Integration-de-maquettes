@@ -1,9 +1,5 @@
 package com.example.easypaymentapp.ui.home
 
-import android.content.res.ColorStateList
-import android.graphics.Color
-import android.graphics.LinearGradient
-import android.graphics.Shader
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.text.SpannableString
