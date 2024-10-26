@@ -5,36 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue_sky"
     android:orientation="vertical"
     android:gravity="center_vertical"
     android:paddingHorizontal="20dp"
     android:paddingTop="50dp"
     android:paddingBottom="90dp"
+    android:background="@color/black"
     tools:context=".SplashScreen">
-
-    <TextView
-        android:id="@+id/titleH1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="One link."
-        android:textSize="50sp"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="All your online payment profiles."
-        android:textColor="@color/white"
-        android:textSize="30sp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Accept payments with ease through payment links."
-        android:textColor="@color/gray"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"/>
 
     <ImageView
         android:id="@+id/SplashScreenImage"
@@ -45,14 +22,23 @@
         android:src="@mipmap/ic_launcher"
         android:layout_gravity="center_horizontal"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ready to exchange cryptocurrency in just two clicks?"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginBottom="40dp"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Get started"
+        android:text="Let's get started!"
         android:textAllCaps="false"
         android:textAlignment="center"
         android:background="@drawable/square_button"
-        android:backgroundTint="@color/white"
-        android:layout_marginHorizontal="80dp"/>
+        android:backgroundTint="@color/green"
+        android:layout_marginHorizontal="20dp"/>
 
 </LinearLayout>
