@@ -10,6 +10,7 @@ import android.view.WindowManager
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import kotlinx.coroutines.*
 
 @Suppress("DEPRECATION")
 class SplashScreen : AppCompatActivity() {
@@ -31,6 +32,12 @@ class SplashScreen : AppCompatActivity() {
             startActivity(intent)
             finish()
         }, 2000)
+
+        CoroutineScope(Dispatchers.Main).launch {
+            delay(2000)
+            startActivity(Intent(this@SplashScreen, MainActivity::class.java))
+            finish()
+        }
 
         val paint = titleH1.paint
         val width = paint.measureText(titleH1.text.toString())
