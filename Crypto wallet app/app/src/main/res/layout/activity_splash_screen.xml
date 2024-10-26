@@ -36,7 +36,6 @@
         android:layout_height="wrap_content"
         android:text="Let's get started!"
         android:textAllCaps="false"
-        android:textAlignment="center"
         android:background="@drawable/square_button"
         android:backgroundTint="@color/green"
         android:layout_marginHorizontal="20dp"/>

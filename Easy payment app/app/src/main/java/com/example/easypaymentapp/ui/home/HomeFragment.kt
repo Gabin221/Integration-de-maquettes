@@ -31,8 +31,6 @@ class HomeFragment : Fragment() {
     lateinit var starButton: TextView
     lateinit var lightShareButton: TextView
 
-    lateinit var test: TextView
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -51,7 +49,6 @@ class HomeFragment : Fragment() {
         paypalLogo = root.findViewById(R.id.paypalLogo)
         starButton = root.findViewById(R.id.starButton)
         lightShareButton = root.findViewById(R.id.lightShareButton)
-        test = root.findViewById(R.id.test)
 
         ajoutImage()
 
